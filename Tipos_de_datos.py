@@ -29,3 +29,6 @@ print("Hola, mi nombre es {} y tengo {} años".format(nombre, edad))
 
 # Solucion 3: f-string
 print(f"Hola, mi nombre es {nombre} y tengo {edad} años")
+
+# NaN: Tiene un espacio de memoria asignado
+# Null: Es nada, no existe un espacio de memoria asignado para null
