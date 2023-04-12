@@ -81,3 +81,48 @@ print(numero2 >= numero1)
 print("--------------- Menor o Igual Que ---------------")
 print(numero1 <= numero2)
 print(numero2 <= numero1)
+
+# Operadores bit a bit
+a = 2 # Binario: 10
+b = 3 # Binario: 11
+
+# Operador AND Bit a Bit
+# Si los dos son 1 devuelve 1, sino devuelve 0
+print("--------------- AND Bit a Bit ---------------")
+print(a & b)
+
+# Operador OR Bit a Bit
+# Si algunos de los dos son 1 devuelve 1, si ningununo de los dos es 1 duvuelve 0
+print("--------------- OR Bit a Bit ---------------")
+print(a | b)
+
+# Operador XOR Bit a Bit
+# Si ambos numeros son iguales devuelve 0, si son diferentes devuelve 1
+print("--------------- XOR Bit a Bit ---------------")
+print(a ^ b)
+
+# Operador NOT Bit a Bit
+# Invertir cada Bit en el operando
+# Este es un operador de un solo numero
+# Este operador saca el complemento del numero
+# 00000010 = 2
+# 11111101 = -2 "(-1)"
+# -2 - 1 = -3
+print("--------------- NOT Bit a Bit ---------------")
+print(~a)
+print(~b)
+
+# Desplazamiento a la derecha
+# Desplazar hacia la derecha los bits x cantidad de posiciones
+# 00000010 = 2
+# 00000011 = 3
+print("--------------- Desplazamiento a la derecha ---------------")
+print(a >> b) # 00000000 - 01 = 0
+print(b >> a) # 00000000 - 11 = 0
+
+# Dezplazamiento a la izquierda
+# Desplazar hacia la izquierda los bits x cantidad de posiciones
+# 00000010 = 2
+# 00000011 = 3
+print(a << b) # 00010000 = 16
+print(b << a) # 00001100 = 12
