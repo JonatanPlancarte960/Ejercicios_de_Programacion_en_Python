@@ -126,3 +126,77 @@ print(b >> a) # 00000000 - 11 = 0
 # 00000011 = 3
 print(a << b) # 00010000 = 16
 print(b << a) # 00001100 = 12
+
+# Operadores Logicos
+# Los Operadores Logicos hacen operaciones con valores booleanos
+print("--------------- Operadores Logicos ---------------")
+print("--------------- Operador Logico AND ---------------")
+# Devuelve True si todas las condiciones son Verdaderas (True)
+costo_cigarros = 50
+dinero = 100
+edad = 20
+print(dinero >= costo_cigarros and edad >= 18)
+print(True and True)
+print(True and False)
+print(False and False)
+
+print("--------------- Operador Logico OR ---------------")
+# Devuelve True si al menos una de las condiciones es verdadera (True)
+costo_cigarros = 50
+dinero = 100
+edad = 20
+print(dinero >= costo_cigarros or edad >= 18)
+print(True or True)
+print(True or False)
+print(False or False)
+
+print("--------------- Operador Logico NOT ---------------")
+# El Operador Logico NOT invierte el resultado de una condicion
+costo_cigarros = 50
+dinero = 100
+edad = 20
+print(not(dinero >= costo_cigarros or edad >= 18))
+print(not(True or True))
+print(not(True or False))
+print(not(False or False))
+print(not True)
+print(not False)
+
+# Operadores de Pertenencia
+print("--------------- Operadores de Pertenencia ---------------")
+# Un Operador de Pertenencia indica si algo pertenece a un conjunto de datos, a una lista, a "algo"
+lista = [1, 2, 3, 4, 5]
+print(lista)
+print("--------------- Operador de Pertenencia IN ---------------")
+# IN -> Pertenece a - Esta en
+# Devuelve True si pertenece a una lista
+print(3 in lista)
+print(7 in lista)
+
+print("--------------- Operador de Pertenencia NOT IN ---------------")
+# not in -> No pertenece a - No esta en
+# Devuelve True si no pertenece a una lista
+print(3 not in lista)
+print(7 not in lista)
+
+# Operadores de Indentidad
+print("--------------- Operadores de Identidad ---------------")
+# Sirve para saber si algo esta en la misma ubicacion en memoria
+print("--------------- Operador de Identidad IS ---------------")
+# Devuelve True si algo se refiere al mismo objeto
+a = 3
+b = 3
+c = 4
+d = a
+print(a is b)
+print(a is d)
+print(a is c)
+print("--------------- Operador de Identidad IS NOT ---------------")
+# Devuelve True si algo no se refiere al mismo objeto
+print(a is not b)
+print(a is not d)
+print(a is not c)
+
+a = 10
+print(a)
+print(d)
