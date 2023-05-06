@@ -1,4 +1,4 @@
-'''# El ciclo for
+# El ciclo for
 palabras = ["gato" , "perro" , "manzana"]
 for palabra in palabras: # Para cada palabra dentro de palabras:
     print(palabra, len(palabra)) # Imprime palabra, longitud de palabra
@@ -20,7 +20,7 @@ for i in range(num_palabras): # Para cada i(iterador - variable temporal) en un 
     # append() sirve para añadir una cadena a una lista
 print("Este es el resultado") # Imprime Este es el resultado
 print(varias_palabras) # Imprime la lista varias_palabras
-'''
+
 print("---------------------------------------------------------------")
 # Checador de numeros primos
 # Un numero primo es el que solo se divide entre si mismo y entre uno
