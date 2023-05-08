@@ -39,3 +39,30 @@ print(jonatan.altura)
 mari = Persona("Mari", 25, 1.60)
 print(mari.leer_edad())
 print(mari.altura)
+
+print("---------------------------")
+# ---------------- Otra Funcion --------------------------
+
+class Perro:
+    tipo = "Canino" # Variable va a ser compartida con todas las instancias
+    def __init__(self, nombre):
+        self.nombre = nombre
+        self.trucos = []
+
+    def aprender_truco(self, truco):
+        self.trucos.append(truco)
+
+puppy = Perro("Puppy")
+puppy.aprender_truco("Dar la patita")
+
+manchas = Perro("Manchas")
+manchas.aprender_truco("Hacerce el muertito")
+
+print(puppy.tipo)
+print(manchas.tipo)
+
+print(puppy.nombre)
+print(manchas.nombre)
+
+print(puppy.trucos)
+print(manchas.trucos)
