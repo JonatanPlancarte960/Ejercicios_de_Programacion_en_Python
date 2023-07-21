@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Aplicación Simple</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #666;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mi Aplicación Simple</h1>
+  <p>Bienvenido a mi app simple. ¡Haz clic en el botón para hacer algo!</p>
+  <button id="myButton">Haz clic aquí</button>
+
+  <script>
+    // JavaScript para el botón
+    document.getElementById("myButton").addEventListener("click", function() {
+      alert("¡Hola! Has hecho clic en el botón.");
+    });
+  </script>
+</body>
+</html>
